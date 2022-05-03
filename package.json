@@ -1,0 +1,29 @@
+{
+  "name": "my-little-pony-m2-p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -e ejs,js,html,css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KleitonLima/My-Little-Pony-M2-P3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KleitonLima/My-Little-Pony-M2-P3/issues"
+  },
+  "homepage": "https://github.com/KleitonLima/My-Little-Pony-M2-P3#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.18.1"
+  }
+}
