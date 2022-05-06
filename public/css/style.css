@@ -20,6 +20,7 @@ header {
   background-image: url("https://img.elo7.com.br/product/zoom/1B21751/painel-my-little-pony-2-5x1-5m-my-little-pony.jpg");
   background-size: cover;
   background-position: center;
+  font-size: xx-large;
 }
 header nav {
   display: flex;
@@ -28,14 +29,39 @@ header nav {
 }
 header nav ul {
   display: flex;
+  align-items: center;
   gap: 16px;
   list-style: none;
+}
+ul img {
+  padding-top: 25px;
 }
 main {
   min-height: 70%;
   background-color: #ea2980;
 }
+section#conteiners {
+  padding: 16px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+article.cardsHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+td {
+  width: 450px;
+}
 footer {
   height: 10%;
   background-color: #791371;
+}
+a {
+  text-decoration: none;
+  color: #791371;
+  text-shadow: 0 0 5px #ea2980;
 }

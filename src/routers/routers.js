@@ -1,6 +1,7 @@
 import express from "express";
-import { getIndex } from "../controller/Controlador.js";
+import { getDetalhes, getIndex } from "../controller/Controlador.js";
 
 export const routers = express.Router();
 
 routers.get("/", getIndex);
+routers.get('/detalhes/:id', getDetalhes)

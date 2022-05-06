@@ -4,14 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <script src="https://kit.fontawesome.com/709f975536.js" crossorigin="anonymous"></script>
     <title>Home</title>
   </head>
   <body>
     <%- include('./partials/header.ejs') %>
     <main>
-      <h1>Main</h1>
+      <section id="conteiners">
+        <% listPersonagens.forEach(element => { %>
+          <article class="cardsHome">
+            <div class="nomeHome"><%= element.nome %></div>
+            <div class="imagemHome">
+              <a href="/detalhes/<%= element.id %> ">
+              <img height="300px" src="<%= element.imagem %> " alt="<%= element.nome %> " />
+            </a>
+            </div>
+            <div class="especieHome"><%= element.especie %> 
+            </article>
+              <% }) %></div>
+      </section>
     </main>
     <%- include('./partials/footer.ejs') %>
   </body>

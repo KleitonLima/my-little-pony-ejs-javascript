@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://kit.fontawesome.com/709f975536.js" crossorigin="anonymous"></script>
+    <title>Detalhes</title>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+      <section id="conteiners">
+        <img height="400px" src="<%= detalhesPerson.imagem %> " alt="" />
+        <table>
+          <tbody>
+            <tr>
+              <td>Nome: <%= detalhesPerson.nome %></td>
+            </tr>
+            <tr>
+              <td>Espécie: <%= detalhesPerson.especie %></td>
+            </tr>
+            <tr>
+              <td>Habilidades: <%= detalhesPerson.habilidades %></td>
+            </tr>
+            <tr>
+              <td>Personalidade: <%= detalhesPerson.personalidade %></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
