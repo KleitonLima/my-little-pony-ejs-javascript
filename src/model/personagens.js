@@ -38,3 +38,9 @@ export const personagens = connection.define(
     timestamps: false,
   }
 );
+
+// function initTable(){
+//   personagens.async()
+// }
+
+// initTable()
