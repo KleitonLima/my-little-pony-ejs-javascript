@@ -39,8 +39,12 @@ export const personagens = connection.define(
   }
 );
 
-// function initTable(){
-//   personagens.async()
-// }
+const initTable = async () => {
+  try {
+    await personagens.sync();
+  } catch (error) {
+    res.send(error.message);
+  }
+};
 
-// initTable()
+initTable();

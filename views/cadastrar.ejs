@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Cadastro</title>
   </head>
   <body>
@@ -33,6 +34,18 @@
         </fieldset>
       </form>
     </main>
-    <%- include('./partials/footer.ejs') %>
+    <%- include('./partials/footer.ejs') %> <% if(toggle) { %>
+    <script>
+      Swal.fire({
+        icon: "success",
+        title: "Personagem cadastrado com sucesso",
+        showConfirmButton: false,
+        timer: 3000,
+      });
+      setInterval(() => {
+        window.location.href = "/";
+      }, 3000);
+    </script>
+    <% } %>
   </body>
 </html>

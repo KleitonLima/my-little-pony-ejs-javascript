@@ -40,16 +40,17 @@ export const getDeletar = async (req, res) => {
 };
 
 export const getCadastrar = (req, res) => {
-  res.render("cadastrar.ejs");
+  res.render("cadastrar.ejs", {toggle: false});
 };
 
 export const postCadastrar = async (req, res) => {
   const { imagem, nome, especie, habilidades, personalidade } = req.body;
   try {
-    await personagens.create({ imagem, nome, especie, habilidades, personalidade });
-    res.redirect("/");
     if (!imagem || !nome || !especie || !habilidades || !personalidade) {
       res.send("Não tente me burlar! Volte e digite todos os campos!");
+    } else {
+      await personagens.create({ imagem, nome, especie, habilidades, personalidade });
+      res.render("cadastrar.ejs", {toggle: true});
     }
   } catch (error) {
     res.send(error.message);
