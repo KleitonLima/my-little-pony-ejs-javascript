@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="https://kit.fontawesome.com/709f975536.js" crossorigin="anonymous"></script>
     <title>Detalhes</title>
   </head>
   <body>
@@ -13,7 +12,7 @@
     <main>
       <section id="detalhes">
         <img height="400px" src="<%= detalhesPerson.imagem %> " alt="" />
-        <table>
+        <table id="infoDetalhes">
           <thead>
             <th><%= detalhesPerson.nome %></th>
           </thead>
@@ -39,6 +38,14 @@
           </tbody>
         </table>
       </section>
+      <div id="delEdit">
+        <a href="/deletar/<%= detalhesPerson.id %> ">
+          <i class="fa-duotone fa-trash-xmark">Deletar</i>
+        </a>
+        <a href="/editar/<%= detalhesPerson.id %> ">
+          <i class="fa-duotone fa-file-pen">Editar</i>
+        </a>
+      </div>
     </main>
     <%- include('./partials/footer.ejs') %>
   </body>

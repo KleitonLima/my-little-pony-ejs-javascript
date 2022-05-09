@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Edição</title>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+      <form id="cadastro" method="post" action="/editar/<%= personagemAtual.id %> ">
+        <fieldset>
+          <legend>Editando <%= personagemAtual.nome %> </legend>
+
+          <label for="imagem">Imagem</label>
+          <input type="url" name="imagem" required value="<%= personagemAtual.imagem %> "/>
+
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" required value="<%= personagemAtual.nome %> "/>
+
+          <label for="especie">Espécie</label>
+          <input type="text" name="especie" required value="<%= personagemAtual.especie %> "/>
+
+          <label for="habilidades">Habilidades</label>
+          <input type="text" name="habilidades" required value="<%= personagemAtual.habilidades %>"/>
+
+          <label for="personalidade">Personalidade</label>
+          <input type="text" name="personalidade" required value="<%= personagemAtual.personalidade %>"/>
+
+          <button type="submit">Salvar</button>
+        </fieldset>
+      </form>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
