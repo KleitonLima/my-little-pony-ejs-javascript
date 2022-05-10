@@ -68,9 +68,6 @@ section#conteiners {
   align-items: center;
   flex-wrap: wrap;
 }
-article{
-  height: 100%;
-}
 
 .cardsHome {
   height: 80%;
@@ -93,9 +90,10 @@ section#detalhes {
   justify-content: space-evenly;
   color: #791371;
   text-shadow: 0 0 5px white;
+  flex-wrap: wrap;
 }
 table#infoDetalhes {
-  width: 30%;
+  width: 300px;
 }
 td {
   width: 100%;
@@ -120,6 +118,7 @@ form#cadastro {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 legend {
   padding-bottom: 16px;

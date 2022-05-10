@@ -11,42 +11,36 @@
     <%- include('./partials/header.ejs') %>
     <main>
       <section id="detalhes">
-        <article>
-          <img height="100%" src="<%= detalhesPerson.imagem %> " alt="" />
-          <table id="infoDetalhes">
-            <thead>
-              <th><%= detalhesPerson.nome %></th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Espécie:</td>
-              </tr>
-              <tr>
-                <td class="info"><%= detalhesPerson.especie %></td>
-              </tr>
-              <tr>
-                <td>Habilidades:</td>
-              </tr>
-              <tr>
-                <td class="info"><%= detalhesPerson.habilidades %></td>
-              </tr>
-              <tr>
-                <td>Personalidade:</td>
-              </tr>
-              <tr>
-                <td class="info"><%= detalhesPerson.personalidade %></td>
-              </tr>
-            </tbody>
-          </table>
-        </article>
+        <img width="400px" src="<%= detalhesPerson.imagem %> " alt="" />
+        <table id="infoDetalhes">
+          <thead>
+            <th><%= detalhesPerson.nome %></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Espécie:</td>
+            </tr>
+            <tr>
+              <td class="info"><%= detalhesPerson.especie %></td>
+            </tr>
+            <tr>
+              <td>Habilidades:</td>
+            </tr>
+            <tr>
+              <td class="info"><%= detalhesPerson.habilidades %></td>
+            </tr>
+            <tr>
+              <td>Personalidade:</td>
+            </tr>
+            <tr>
+              <td class="info"><%= detalhesPerson.personalidade %></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <div id="delEdit">
-        <a href="/deletar/<%= detalhesPerson.id %> ">
-          <i class="fa-duotone fa-trash-xmark">Deletar</i>
-        </a>
-        <a href="/editar/<%= detalhesPerson.id %> ">
-          <i class="fa-duotone fa-file-pen">Editar</i>
-        </a>
+        <a href="/deletar/<%= detalhesPerson.id %> "> Deletar </a>
+        <a href="/editar/<%= detalhesPerson.id %> "> Editar </a>
       </div>
     </main>
     <%- include('./partials/footer.ejs') %>
