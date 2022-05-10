@@ -11,28 +11,31 @@
   <body>
     <%- include('./partials/header.ejs') %>
     <main>
-      <form id="cadastro" method="post" action="/cadastrar">
-        <fieldset>
-          <legend>Cadastro de personagem</legend>
+      <section id="conteiner_cadastro">
+        <form id="cadastro" method="post" action="/cadastrar">
+          <fieldset>
+            <legend>Cadastro de personagem</legend>
 
-          <label for="imagem">Imagem</label>
-          <input type="url" name="imagem" required />
+            <label for="imagem">Imagem</label>
+            <input type="url" name="imagem" required />
 
-          <label for="nome">Nome</label>
-          <input type="text" name="nome" required />
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" required />
 
-          <label for="especie">Espécie</label>
-          <input type="text" name="especie" required />
+            <label for="especie">Espécie</label>
+            <input type="text" name="especie" required />
 
-          <label for="habilidades">Habilidades</label>
-          <input type="text" name="habilidades" required />
+            <label for="habilidades">Habilidades</label>
+            <input type="text" name="habilidades" required />
 
-          <label for="personalidade">Personalidade</label>
-          <input type="text" name="personalidade" required />
-
-          <button type="submit">Cadastrar</button>
-        </fieldset>
-      </form>
+            <label for="personalidade">Personalidade</label>
+            <input type="text" name="personalidade" required />
+            <div id="button">
+              <button type="submit">Cadastrar</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
     <%- include('./partials/footer.ejs') %> <% if(toggle) { %>
     <script>

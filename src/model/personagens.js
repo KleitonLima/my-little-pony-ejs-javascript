@@ -11,7 +11,7 @@ export const personagens = connection.define(
       autoIncrement: true,
     },
     imagem: {
-      type: Sequelize.STRING,
+      type: Sequelize.STRING(500),
       allowNull: false,
     },
     nome: {
@@ -27,7 +27,7 @@ export const personagens = connection.define(
       allowNull: false,
     },
     personalidade: {
-      type: Sequelize.STRING,
+      type: Sequelize.STRING(500),
       allowNull: false,
     },
   },

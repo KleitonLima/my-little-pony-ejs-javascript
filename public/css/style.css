@@ -12,7 +12,16 @@ body {
   width: 100vw;
   max-width: 100%;
 }
-
+a {
+  text-decoration: none;
+  color: #791371;
+  text-shadow: 0 0 5px white;
+}
+footer a {
+  text-decoration: none;
+  color: #ea2980;
+  text-shadow: 0 0 5px black;
+}
 header {
   height: 20%;
   display: flex;
@@ -42,6 +51,7 @@ header ul img {
   }
 }
 main {
+  height: 70%;
   min-height: 70%;
   background-color: #ea2980;
 }
@@ -76,8 +86,15 @@ td {
 td.info {
   text-align: center;
 }
-form#cadastro {
+section#conteiner_cadastro {
   height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form#cadastro {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -87,6 +104,23 @@ fieldset {
   justify-content: center;
   gap: 8px;
   width: 30%;
+  border: none;
+}
+button {
+  width: 50%;
+  color: #ea2980;
+  background-color: #791371;
+  border: 3px solid white;
+  font-size: large;
+  font-weight: bold;
+}
+button:hover {
+  transform: scale(1.1);
+}
+div#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer {
   height: 10%;
@@ -94,14 +128,4 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-a {
-  text-decoration: none;
-  color: #791371;
-  text-shadow: 0 0 5px white;
-}
-footer a {
-  text-decoration: none;
-  color: #ea2980;
-  text-shadow: 0 0 5px black;
 }
