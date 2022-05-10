@@ -22,6 +22,12 @@ footer a {
   color: #ea2980;
   text-shadow: 0 0 5px black;
 }
+a:hover {
+  transform: scale(1.05);
+}
+li a:hover {
+  transform: scale(1.05);
+}
 header {
   height: 20%;
   display: flex;
@@ -51,7 +57,6 @@ header ul img {
   }
 }
 main {
-  height: 70%;
   min-height: 70%;
   background-color: #ea2980;
 }
@@ -73,11 +78,12 @@ section#conteiners {
   color: #791371;
   text-shadow: 0 0 5px white;
 }
-.imagemHome:hover{
+.imagemHome:hover {
   transform: scale(1.05);
 }
 section#detalhes {
-  padding: 16px;
+  height: 70%;
+  padding: 32px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
