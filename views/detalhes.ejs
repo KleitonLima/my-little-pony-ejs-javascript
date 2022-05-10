@@ -11,32 +11,34 @@
     <%- include('./partials/header.ejs') %>
     <main>
       <section id="detalhes">
-        <img height="100%" src="<%= detalhesPerson.imagem %> " alt="" />
-        <table id="infoDetalhes">
-          <thead>
-            <th><%= detalhesPerson.nome %></th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Espécie:</td>
-            </tr>
-            <tr>
-              <td class="info"><%= detalhesPerson.especie %></td>
-            </tr>
-            <tr>
-              <td>Habilidades:</td>
-            </tr>
-            <tr>
-              <td class="info"><%= detalhesPerson.habilidades %></td>
-            </tr>
-            <tr>
-              <td>Personalidade:</td>
-            </tr>
-            <tr>
-              <td class="info"><%= detalhesPerson.personalidade %></td>
-            </tr>
-          </tbody>
-        </table>
+        <article>
+          <img height="100%" src="<%= detalhesPerson.imagem %> " alt="" />
+          <table id="infoDetalhes">
+            <thead>
+              <th><%= detalhesPerson.nome %></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Espécie:</td>
+              </tr>
+              <tr>
+                <td class="info"><%= detalhesPerson.especie %></td>
+              </tr>
+              <tr>
+                <td>Habilidades:</td>
+              </tr>
+              <tr>
+                <td class="info"><%= detalhesPerson.habilidades %></td>
+              </tr>
+              <tr>
+                <td>Personalidade:</td>
+              </tr>
+              <tr>
+                <td class="info"><%= detalhesPerson.personalidade %></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
       </section>
       <div id="delEdit">
         <a href="/deletar/<%= detalhesPerson.id %> ">
