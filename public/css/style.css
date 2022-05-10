@@ -56,12 +56,15 @@ main {
   background-color: #ea2980;
 }
 section#conteiners {
+  height: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-article.cardsHome {
+.cardsHome {
+  height: 80%;
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -70,7 +73,11 @@ article.cardsHome {
   color: #791371;
   text-shadow: 0 0 5px white;
 }
+.imagemHome:hover{
+  transform: scale(1.05);
+}
 section#detalhes {
+  padding: 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -86,6 +93,12 @@ td {
 td.info {
   text-align: center;
 }
+#delEdit {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: x-large;
+}
 section#conteiner_cadastro {
   height: 100%;
   width: 100%;
@@ -97,6 +110,9 @@ form#cadastro {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+legend {
+  padding-bottom: 16px;
 }
 fieldset {
   display: flex;
@@ -115,7 +131,7 @@ button {
   font-weight: bold;
 }
 button:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 div#button {
   display: flex;
